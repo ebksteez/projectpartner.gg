@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Project Partner | Creator Growth Network</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+}
+
+body{
+background:#050505;
+color:white;
+overflow-x:hidden;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+:root{
+--blue:#3b82f6;
+--dark:#050505;
+--card:#0f0f12;
+--text:#d1d5db;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:25px 10%;
+position:fixed;
+width:100%;
+top:0;
+backdrop-filter:blur(10px);
+background:rgba(5,5,5,.8);
+z-index:999;
+}
+
+.logo{
+font-size:1.4rem;
+font-weight:800;
+letter-spacing:.5px;
+}
+
+.logo span{
+color:var(--blue);
+}
+
+.nav-btn{
+background:var(--blue);
+padding:12px 24px;
+border-radius:8px;
+text-decoration:none;
+color:white;
+font-weight:600;
+transition:.3s;
+}
+
+.nav-btn:hover{
+transform:translateY(-2px);
+}
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:0 10%;
+background:
+radial-gradient(circle at top,#1d4ed840,transparent 40%);
+}
+
+.hero-content{
+max-width:900px;
+}
+
+.hero h1{
+font-size:4rem;
+font-weight:800;
+margin-bottom:20px;
+line-height:1.1;
+}
+
+.hero h1 span{
+color:var(--blue);
+}
+
+.hero p{
+font-size:1.2rem;
+color:var(--text);
+margin-bottom:35px;
+line-height:1.8;
+}
+
+.hero-buttons{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+}
+
+.primary-btn{
+background:var(--blue);
+padding:15px 30px;
+border-radius:10px;
+text-decoration:none;
+color:white;
+font-weight:700;
+}
+
+.secondary-btn{
+border:1px solid #2a2a2a;
+padding:15px 30px;
+border-radius:10px;
+text-decoration:none;
+color:white;
+}
+
+section{
+padding:100px 10%;
+}
+
+.section-title{
+text-align:center;
+font-size:2.5rem;
+margin-bottom:20px;
+}
+
+.section-subtitle{
+text-align:center;
+color:var(--text);
+max-width:700px;
+margin:0 auto 60px;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:var(--card);
+padding:30px;
+border-radius:15px;
+border:1px solid #171717;
+transition:.3s;
+}
+
+.card:hover{
+border-color:var(--blue);
+transform:translateY(-5px);
+}
+
+.card h3{
+margin-bottom:15px;
+}
+
+.card p{
+color:var(--text);
+line-height:1.7;
+}
+
+.spotlight{
+text-align:center;
+background:#0b0b0d;
+border-radius:20px;
+padding:60px;
+}
+
+.spotlight h2{
+margin-bottom:20px;
+}
+
+.spotlight p{
+color:var(--text);
+margin-bottom:25px;
+}
+
+.apply{
+text-align:center;
+}
+
+.apply-box{
+max-width:800px;
+margin:auto;
+background:var(--card);
+padding:50px;
+border-radius:20px;
+}
+
+.apply-box p{
+color:var(--text);
+margin:20px 0;
+}
+
+.footer{
+text-align:center;
+padding:40px;
+border-top:1px solid #171717;
+color:#777;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.7rem;
+}
+
+.hero p{
+font-size:1rem;
+}
+
+nav{
+padding:20px 6%;
+}
+
+section{
+padding:80px 6%;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<nav>
+<div class="logo">
+PROJECT <span>PARTNER</span>
+</div>
+
+<a href="#apply" class="nav-btn">
+Apply Now
+</a>
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>
+Built For Creators Who Refuse To Stay <span>Small</span>
+</h1>
+
+<p>
+Project Partner is a free creator growth network helping creators
+get feedback, build connections, improve their content, and stay
+accountable to their goals.
+</p>
+
+<div class="hero-buttons">
+<a href="#apply" class="primary-btn">Join Project Partner</a>
+<a href="#features" class="secondary-btn">Learn More</a>
+</div>
+
+</div>
+
+</section>
+
+<section id="features">
+
+<h2 class="section-title">
+Why Join Project Partner?
+</h2>
+
+<p class="section-subtitle">
+More than a Discord server. More than a creator group.
+A network built around helping creators grow.
+</p>
+
+<div class="features">
+
+<div class="card">
+<h3>Channel Reviews</h3>
+<p>
+Receive personalized feedback on your content, branding,
+thumbnails, and overall channel strategy.
+</p>
+</div>
+
+<div class="card">
+<h3>Growth Guidance</h3>
+<p>
+Get advice from experienced creators and learn proven
+methods for improving your content.
+</p>
+</div>
+
+<div class="card">
+<h3>Creator Spotlights</h3>
+<p>
+Outstanding creators may be featured across Project Partner
+and community platforms.
+</p>
+</div>
+
+<div class="card">
+<h3>Collaboration Opportunities</h3>
+<p>
+Meet creators in your niche and discover opportunities
+to create together.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="spotlight">
+
+<h2>Creator Spotlight Program</h2>
+
+<p>
+Each month we highlight creators who demonstrate consistency,
+growth, and dedication to their craft.
+</p>
+
+<a href="#apply" class="primary-btn">
+Apply Today
+</a>
+
+</div>
+
+</section>
+
+<section id="apply" class="apply">
+
+<h2 class="section-title">
+Applications Open
+</h2>
+
+<div class="apply-box">
+
+<h3>Manual Review Process</h3>
+
+<p>
+Every application is reviewed personally by Founder Steez.
+Our goal is to build a community of creators who are serious
+about improving and supporting one another.
+</p>
+
+<a href="YOUR_APPLICATION_LINK_HERE"
+class="primary-btn">
+Submit Application
+</a>
+
+</div>
+
+</section>
+
+<footer class="footer">
+
+PROJECT PARTNER © 2026
+
+<br><br>
+
+Helping creators grow together.
+
+</footer>
+
+</body>
+</html>
