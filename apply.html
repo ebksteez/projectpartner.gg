@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Partner Application</title>
+  <style>
+    :root{
+      --bg:#050505;
+      --panel:#0f1116;
+      --text:#e5e7eb;
+      --muted:#9ca3af;
+      --blue:#3b82f6;
+      --blue-2:#1d4ed8;
+      --line:#1f2937;
+      --radius:20px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      background:
+        radial-gradient(circle at top, rgba(59,130,246,.16), transparent 34%),
+        linear-gradient(180deg, #050505, #070b12 60%, #050505);
+      color:var(--text);
+    }
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:1100px;margin:0 auto;padding:24px}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0 24px}
+    .brand{font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+    .brand span{color:var(--blue)}
+    .pill{border:1px solid rgba(59,130,246,.35);background:rgba(59,130,246,.08);color:#bfdbfe;padding:10px 14px;border-radius:999px;font-size:.9rem}
+    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;padding:16px 0 30px}
+    .panel{background:linear-gradient(180deg, rgba(15,17,22,.96), rgba(17,24,39,.86));border:1px solid var(--line);border-radius:var(--radius);box-shadow:0 20px 60px rgba(0,0,0,.35)}
+    .hero-main{padding:34px}
+    h1{margin:0 0 14px;font-size:clamp(2.2rem,4vw,4.2rem);line-height:1.03}
+    h1 span{color:var(--blue)}
+    .lead{margin:0 0 22px;color:var(--muted);line-height:1.8;font-size:1.03rem;max-width:65ch}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 18px;border-radius:14px;font-weight:700}
+    .btn-primary{background:linear-gradient(135deg,var(--blue),var(--blue-2));color:#fff}
+    .side{padding:24px;display:flex;flex-direction:column;gap:16px}
+    .box{padding:18px;border-radius:16px;background:rgba(255,255,255,.02);border:1px solid var(--line)}
+    .box h3{margin:0 0 8px}
+    .box p{margin:0;color:var(--muted);line-height:1.7}
+    .section{padding:10px 0 34px}
+    .section h2{margin:0 0 10px;font-size:1.9rem}
+    .section .sub{margin:0 0 18px;color:var(--muted);line-height:1.7;max-width:72ch}
+    .form-panel{padding:24px}
+    .form-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    .full{grid-column:1/-1}
+    label{display:block;font-size:.92rem;color:#cbd5e1;margin:0 0 8px}
+    input,select,textarea{
+      width:100%;border:1px solid #243041;background:#07111f;color:var(--text);
+      padding:14px 14px;border-radius:14px;outline:none;font:inherit;
+    }
+    textarea{min-height:120px;resize:vertical}
+    input:focus,select:focus,textarea:focus{border-color:rgba(59,130,246,.9);box-shadow:0 0 0 4px rgba(59,130,246,.14)}
+    .checklist{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:8px}
+    .check{padding:16px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.02)}
+    .check small{display:block;color:var(--muted);line-height:1.6;margin-top:6px}
+    .submit-row{display:flex;justify-content:flex-end;margin-top:16px}
+    .note{margin-top:12px;color:var(--muted);font-size:.92rem;line-height:1.6}
+    .google{
+      display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;
+      padding:18px;border:1px solid rgba(59,130,246,.22);border-radius:16px;background:rgba(59,130,246,.07);margin-bottom:18px;
+    }
+    .google b{display:block;margin-bottom:4px}
+    .footer{padding:24px 0 14px;color:var(--muted);font-size:.92rem;text-align:center}
+    @media (max-width: 900px){.hero,.form-grid,.checklist{grid-template-columns:1fr}.submit-row .btn{width:100%}}
+    @media (max-width: 640px){.wrap{padding:16px}.hero-main,.side,.form-panel{padding:20px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="nav">
+      <div class="brand">Project <span>Partner</span></div>
+      <a class="pill" href="index.html">Back Home</a>
+    </div>
+
+    <section class="hero">
+      <div class="panel hero-main">
+        <h1>Manual <span>Review</span> Application</h1>
+        <p class="lead">
+          This is the main creator review process. Keep it simple, short, and clean so creators can finish it fast.
+          Use Google Forms for the final version if you want the fastest setup.
+        </p>
+        <a class="btn btn-primary" href="#apply-form">Open Application</a>
+      </div>
+
+      <aside class="panel side">
+        <div class="box">
+          <h3>What to ask</h3>
+          <p>YouTube link, niche, long-term goals, short-term goals, socials, and a few simple creator questions.</p>
+        </div>
+        <div class="box">
+          <h3>How to use it</h3>
+          <p>Replace the final button with your Google Form link when ready.</p>
+        </div>
+        <div class="box">
+          <h3>Review style</h3>
+          <p>Manual approval by Founder Steez keeps the program selective and personal.</p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section">
+      <h2>Quick Questionnaire Structure</h2>
+      <p class="sub">This is the simple version you can copy into Google Forms later.</p>
+      <div class="checklist">
+        <div class="check"><strong>YouTube Questions</strong><small>Channel link, subscriber count, average views, upload schedule.</small></div>
+        <div class="check"><strong>Creator Questions</strong><small>What do you create, what motivates you, what are you trying to improve?</small></div>
+        <div class="check"><strong>Short-Term Goals</strong><small>What do you want to hit in the next 30 to 90 days?</small></div>
+        <div class="check"><strong>Long-Term Goals</strong><small>Where do you want your channel to be in 6 to 12 months?</small></div>
+      </div>
+    </section>
+
+    <section id="apply-form" class="panel form-panel section">
+      <div class="google">
+        <div>
+          <b>Recommended setup</b>
+          <span>Paste your Google Forms link into the button below later.</span>
+        </div>
+        <a class="btn btn-primary" href="#">Open Google Form</a>
+      </div>
+
+      <h2>Application Form</h2>
+      <p class="sub">This form is ready as a layout. You can later connect it to Google Forms or keep it as a custom form.</p>
+
+      <form>
+        <div class="form-grid">
+          <div>
+            <label for="name">Name / Creator Name</label>
+            <input id="name" type="text" placeholder="Creator name" />
+          </div>
+          <div>
+            <label for="yt">YouTube Channel Link</label>
+            <input id="yt" type="url" placeholder="https://youtube.com/@..." />
+          </div>
+          <div>
+            <label for="socials">Other Socials</label>
+            <input id="socials" type="text" placeholder="TikTok, Instagram, X, Twitch, etc." />
+          </div>
+          <div>
+            <label for="subs2">Current Subscribers</label>
+            <input id="subs2" type="text" placeholder="Example: 120" />
+          </div>
+          <div>
+            <label for="shortterm">Short-Term Goals</label>
+            <textarea id="shortterm" placeholder="Example: hit 500 subs, post 3 shorts a week, improve thumbnails."></textarea>
+          </div>
+          <div>
+            <label for="longterm">Long-Term Goals</label>
+            <textarea id="longterm" placeholder="Example: build a brand, reach monetization, create a community."></textarea>
+          </div>
+          <div class="full">
+            <label for="challenge">Biggest Challenge Right Now</label>
+            <textarea id="challenge" placeholder="Example: ideas, consistency, editing, thumbnails, confidence, etc."></textarea>
+          </div>
+        </div>
+
+        <div class="submit-row">
+          <a class="btn btn-primary" href="#">Submit for Manual Review</a>
+        </div>
+      </form>
+      <p class="note">When you create the Google Form, use the same questions in a shorter version so it feels easy to finish.</p>
+    </section>
+
+    <div class="footer">Manual Review Process • Founder Steez • Project Partner</div>
+  </div>
+</body>
+</html>
