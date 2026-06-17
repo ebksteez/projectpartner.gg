@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creator Spotlight Program</title>
+  <style>
+    :root{
+      --bg:#050505;
+      --panel:#0f1116;
+      --text:#e5e7eb;
+      --muted:#9ca3af;
+      --blue:#3b82f6;
+      --blue-2:#1d4ed8;
+      --line:#1f2937;
+      --radius:20px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      background:
+        radial-gradient(circle at top, rgba(59,130,246,.16), transparent 34%),
+        linear-gradient(180deg, #050505, #070b12 60%, #050505);
+      color:var(--text);
+    }
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:1100px;margin:0 auto;padding:24px}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0 24px}
+    .brand{font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+    .brand span{color:var(--blue)}
+    .pill{border:1px solid rgba(59,130,246,.35);background:rgba(59,130,246,.08);color:#bfdbfe;padding:10px 14px;border-radius:999px;font-size:.9rem}
+    .hero{display:grid;grid-template-columns:1.15fr .85fr;gap:24px;padding:16px 0 30px}
+    .panel{background:linear-gradient(180deg, rgba(15,17,22,.96), rgba(17,24,39,.86));border:1px solid var(--line);border-radius:var(--radius);box-shadow:0 20px 60px rgba(0,0,0,.35)}
+    .hero-main{padding:34px}
+    h1{margin:0 0 14px;font-size:clamp(2.2rem,4vw,4.2rem);line-height:1.03}
+    h1 span{color:var(--blue)}
+    .lead{margin:0 0 22px;color:var(--muted);line-height:1.8;font-size:1.03rem;max-width:65ch}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 18px;border-radius:14px;font-weight:700}
+    .btn-primary{background:linear-gradient(135deg,var(--blue),var(--blue-2));color:#fff}
+    .side{padding:24px;display:flex;flex-direction:column;gap:16px}
+    .box{padding:18px;border-radius:16px;background:rgba(255,255,255,.02);border:1px solid var(--line)}
+    .box h3{margin:0 0 8px}
+    .box p{margin:0;color:var(--muted);line-height:1.7}
+    .section{padding:10px 0 34px}
+    .section h2{margin:0 0 10px;font-size:1.9rem}
+    .section .sub{margin:0 0 18px;color:var(--muted);line-height:1.7;max-width:72ch}
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .step{padding:20px;border-radius:18px;background:rgba(255,255,255,.02);border:1px solid var(--line)}
+    .step b{display:inline-flex;width:34px;height:34px;align-items:center;justify-content:center;border-radius:50%;background:rgba(59,130,246,.15);color:#bfdbfe;margin-bottom:12px}
+    .step h3{margin:0 0 8px}
+    .step p{margin:0;color:var(--muted);line-height:1.7}
+    .form-panel{padding:24px}
+    .form-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    label{display:block;font-size:.92rem;color:#cbd5e1;margin:0 0 8px}
+    input,select,textarea{
+      width:100%;border:1px solid #243041;background:#07111f;color:var(--text);
+      padding:14px 14px;border-radius:14px;outline:none;font:inherit;
+    }
+    textarea{min-height:120px;resize:vertical}
+    input:focus,select:focus,textarea:focus{border-color:rgba(59,130,246,.9);box-shadow:0 0 0 4px rgba(59,130,246,.14)}
+    .full{grid-column:1/-1}
+    .submit-row{display:flex;justify-content:flex-end;margin-top:16px}
+    .note{margin-top:12px;color:var(--muted);font-size:.92rem;line-height:1.6}
+    .footer{padding:24px 0 14px;color:var(--muted);font-size:.92rem;text-align:center}
+    @media (max-width: 900px){.hero,.steps,.form-grid{grid-template-columns:1fr}.submit-row .btn{width:100%}}
+    @media (max-width: 640px){.wrap{padding:16px}.hero-main,.side,.form-panel{padding:20px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="nav">
+      <div class="brand">Project <span>Partner</span></div>
+      <a class="pill" href="index.html">Back Home</a>
+    </div>
+
+    <section class="hero">
+      <div class="panel hero-main">
+        <h1><span>Creator Spotlight</span> Program</h1>
+        <p class="lead">
+          This page is for creators who want to be considered for features, shoutouts, and spotlight opportunities.
+          Keep the entry process easy so more creators can actually finish it.
+        </p>
+        <a class="btn btn-primary" href="#spotlight-form">Apply Today</a>
+      </div>
+
+      <aside class="panel side">
+        <div class="box">
+          <h3>What this is</h3>
+          <p>A simple application for creators to share their channel, stats, and goals.</p>
+        </div>
+        <div class="box">
+          <h3>What it is not</h3>
+          <p>Not a long or complicated form. Keep it short, direct, and creator-friendly.</p>
+        </div>
+        <div class="box">
+          <h3>Future upgrade</h3>
+          <p>You can later connect YouTube OAuth or analytics tools, but not needed for version 1.</p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section">
+      <h2>Simple Spotlight Flow</h2>
+      <p class="sub">Use this structure to explain the process before creators submit anything.</p>
+      <div class="steps">
+        <div class="step"><b>1</b><h3>Sign In</h3><p>Creator enters channel link and basic info.</p></div>
+        <div class="step"><b>2</b><h3>Share Stats</h3><p>They provide views, subscribers, niche, and posting style.</p></div>
+        <div class="step"><b>3</b><h3>Review</h3><p>You check fit, consistency, and channel potential.</p></div>
+        <div class="step"><b>4</b><h3>Spotlight</h3><p>Approved creators can be featured on the site or your channel.</p></div>
+      </div>
+    </section>
+
+    <section id="spotlight-form" class="panel form-panel section">
+      <h2>Spotlight Application</h2>
+      <p class="sub">This can stay simple now and later connect to a real stats-based system.</p>
+
+      <form>
+        <div class="form-grid">
+          <div>
+            <label for="sname">Creator Name</label>
+            <input id="sname" type="text" placeholder="Creator name" />
+          </div>
+          <div>
+            <label for="schannel">YouTube Channel Link</label>
+            <input id="schannel" type="url" placeholder="https://youtube.com/@..." />
+          </div>
+          <div>
+            <label for="subs">Current Subscribers</label>
+            <input id="subs" type="text" placeholder="Example: 245" />
+          </div>
+          <div>
+            <label for="views">Average Views Per Video</label>
+            <input id="views" type="text" placeholder="Example: 300-500" />
+          </div>
+          <div>
+            <label for="niche2">Niche</label>
+            <select id="niche2">
+              <option>Gaming</option>
+              <option>Vlogs</option>
+              <option>Music</option>
+              <option>Education</option>
+              <option>Commentary</option>
+              <option>IRL / Lifestyle</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div>
+            <label for="upload">Upload Schedule</label>
+            <input id="upload" type="text" placeholder="Example: 3 shorts weekly" />
+          </div>
+          <div class="full">
+            <label for="goal">Why should you be spotlighted?</label>
+            <textarea id="goal" placeholder="Keep it short and honest."></textarea>
+          </div>
+        </div>
+
+        <div class="submit-row">
+          <a class="btn btn-primary" href="#">Submit Spotlight Application</a>
+        </div>
+      </form>
+      <p class="note">For now, link the button to a Google Form or a later backend. The page itself is ready for your site.</p>
+    </section>
+
+    <div class="footer">Creator Spotlight Program • Project Partner</div>
+  </div>
+</body>
+</html>
